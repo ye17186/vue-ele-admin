@@ -1,5 +1,6 @@
 <template>
-  <el-menu default-active="1-4-1" class="el-menu-vertical-demo">
+  <el-menu class="yc-menu" default-active="1-4-1"
+           :collapse="collapse">
     <el-submenu index="1">
       <template slot="title">
         <i class="el-icon-location"></i>
@@ -51,10 +52,19 @@
 
 <script>
 export default {
-  name: 'YcContainerMenu'
+  name: 'YcAsideMenu',
+  props: {
+    collapse: Boolean
+  },
+  data: function () {
+    return {
+    }
+  }
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .yc-menu:not(.el-menu--collapse) {
+    width: 199px;
+  }
 </style>

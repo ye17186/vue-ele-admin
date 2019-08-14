@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about" style="height: 700px; background-color: bisque; width: 1500px;">
+    dddd
   </div>
 </template>
