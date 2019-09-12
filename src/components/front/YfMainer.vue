@@ -10,5 +10,8 @@ export default {
 }
 </script>
 <style scoped>
-
+  .yf-mainer-container {
+    width: 100%;
+    height: 100%;
+  }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="yf-page-container">
     <yf-header></yf-header>
     <yf-mainer></yf-mainer>
     <yf-footer></yf-footer>
@@ -17,5 +17,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .yf-page-container{
+     min-width: 750px;
+   }
 </style>

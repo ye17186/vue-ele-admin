@@ -2,10 +2,10 @@
   <div class="home-page-container">
     <MainCarousel class="home-section"></MainCarousel>
     <SolutionCards class="home-section" style="padding: 0 5%;"></SolutionCards>
-    <MainCarousel class="home-section"></MainCarousel>
-    <MainCarousel class="home-section"></MainCarousel>
-    <MainCarousel class="home-section"></MainCarousel>
-    <MainCarousel class="home-section"></MainCarousel>
+<!--    <MainCarousel class="home-section"></MainCarousel>-->
+<!--    <MainCarousel class="home-section"></MainCarousel>-->
+<!--    <MainCarousel class="home-section"></MainCarousel>-->
+<!--    <MainCarousel class="home-section"></MainCarousel>-->
     <el-backtop></el-backtop>
 
   </div>

@@ -1,0 +1,39 @@
+// 后面的css会覆盖前面的css
+@media only screen and (max-width: 9999px) { // <=1200的设备
+  .yf-header-w730 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) { // <=1200的设备
+}
+
+@media only screen and (max-width: 992px) { // <=992的设备
+  .yf-header-container {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+  }
+  .yf-header-contact {
+    .yf-header-email1 {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 778px) { // <=768的设备
+  .yf-header-logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 730px) { // <=730的设备
+  .yf-header-container {
+    height: 0;
+  }
+  .yf-header-w1200 {
+    display: none;
+  }
+  .yf-header-w730 {
+    display: inline;
+  }
+}

@@ -2,7 +2,6 @@
   <section>
     <el-carousel :interval="5000" arrow="hover" height="360px">
       <el-carousel-item v-for="item in 4" :key="item">
-        <h3>{{ item }}</h3>
       </el-carousel-item>
     </el-carousel>
   </section>
@@ -19,7 +18,6 @@ export default {
     color: #475669;
     font-size: 14px;
     opacity: 0.75;
-    line-height: 200px;
     margin: 0;
   }
 

@@ -6,6 +6,7 @@ import './plugins/element.js'
 import AxiosConfig from './plugins/AxiosConfig'
 
 import './assets/css/global.css'
+import './assets/css/front/responsive.scss'
 
 Vue.config.productionTip = false
 Vue.prototype.$http = AxiosConfig
