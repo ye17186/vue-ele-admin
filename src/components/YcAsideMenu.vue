@@ -1,56 +1,31 @@
 <template>
   <el-menu class="yc-menu" default-active="1-4-1"
            :collapse="collapse">
-    <el-submenu index="1">
-      <template slot="title">
-        <i class="el-icon-location"></i>
-        <span slot="title">导航一</span>
-      </template>
-      <el-menu-item-group>
-        <span slot="title">分组一</span>
-        <el-menu-item index="1-1">选项1</el-menu-item>
-        <el-menu-item index="1-2">选项2</el-menu-item>
-      </el-menu-item-group>
-      <el-menu-item-group title="分组2">
-        <el-menu-item index="1-3">选项3</el-menu-item>
-      </el-menu-item-group>
-      <el-submenu index="1-4">
-        <span slot="title">选项4</span>
-        <el-menu-item index="1-4-1">选项1</el-menu-item>
+    <template v-for="menuA in menus">
+      <el-menu-item v-if="!menuA.meta.hidden && menuA.meta.key.split('_').length === 1 && menuA.meta.isLeaf"
+                    :key="menuA.meta.key" :index="menuA.meta.key">
+        <span slot="title">{{ menuA.meta.title }}</span>
+      </el-menu-item>
+      <el-submenu v-else-if="!menuA.meta.hidden && menuA.meta.key.split('_').length === 1 && !menuA.meta.isLeaf"
+                  :key="menuA.meta.key" :index="menuA.meta.key">
+        <template slot="title">
+          <span slot="title">{{ menuA.meta.title }}</span>
+        </template>
+        <template v-for="menuB in menus">
+          <el-menu-item v-if="!menuB.meta.hidden && menuB.meta.key.split('_').length === 2
+           && menuB.meta.key.split('_')[0] === menuA.meta.key && menuB.meta.isLeaf"
+                        :key="menuB.meta.key" :index="menuB.meta.key">
+            <span slot="title">{{ menuB.meta.title }}</span>
+          </el-menu-item>
+        </template>
       </el-submenu>
-    </el-submenu>
-    <el-menu-item index="2">
-      <i class="el-icon-menu"></i>
-      <span slot="title">导航二</span>
-    </el-menu-item>
-    <el-menu-item index="3" disabled>
-      <i class="el-icon-document"></i>
-      <span slot="title">导航三</span>
-    </el-menu-item>
-    <el-menu-item index="4">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="4">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="5">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="6">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
-    <el-menu-item index="7">
-      <i class="el-icon-setting"></i>
-      <span slot="title">导航四</span>
-    </el-menu-item>
+    </template>
   </el-menu>
 </template>
 
 <script>
+import SysConfig from '../assets/js/SysConfig'
+
 export default {
   name: 'YcAsideMenu',
   props: {
@@ -58,6 +33,7 @@ export default {
   },
   data: function () {
     return {
+      menus: SysConfig.menus
     }
   }
 }

@@ -54,11 +54,10 @@ export default {
     -moz-transition: width .3s;
     -webkit-transition: width .3s;
     -o-transition: width .3s;
-
+    border-right: solid 1px #e6e6e6;
     .yc-admin-logo {
       height: 50px;
       border-bottom: 2px solid #cccccc;
-      border-right: solid 1px #e6e6e6;
     }
     .el-scrollbar__wrap {
       overflow-x: hidden;

@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    menuCollapse: true
+    menuCollapse: false
   },
   mutations: {
     switchMenuCollapse: function (state) {
