@@ -1,4 +1,8 @@
-// 运营平台页面
+/**
+ * 系统配置
+ */
+
+// Admin平台涉及的所有页面
 const AdminPages = {
   page1: {
     path: '/a/page_1',
@@ -42,7 +46,7 @@ const AdminPages = {
   }
 }
 
-// 运营平台路由
+// 根据AdminPages，生成路由
 const AdminRoutes = [
   {
     path: '/a',
@@ -63,7 +67,7 @@ const AdminRoutes = [
   }
 ]
 
-// 官网路由
+// 前端平台的路由
 const FrontRoutes = [
   {
     path: '/f',
@@ -75,7 +79,7 @@ const FrontRoutes = [
   }
 ]
 
-// 运营平台侧边菜单
+// Admin运营平台侧边菜单
 const menus = [AdminPages.page1, AdminPages.page1T1, AdminPages.page1T2, AdminPages.page2]
 // 系统全路由
 const routes = AdminRoutes.concat(FrontRoutes)
