@@ -2,7 +2,7 @@
 const AdminPages = {
   page1: {
     path: '/a/page_1',
-    component: () => import('../../views/admin/page1/Page1.vue'),
+    component: () => import('../views/admin/page1/Page1.vue'),
     meta: {
       key: '1',
       title: 'Page1',
@@ -12,7 +12,7 @@ const AdminPages = {
   },
   page1T1: {
     path: '/a/page_1/page_1_1',
-    component: () => import('../../views/admin/page1/Page1T1.vue'),
+    component: () => import('../views/admin/page1/Page1T1.vue'),
     meta: {
       key: '1_1',
       title: 'Page1_1',
@@ -22,7 +22,7 @@ const AdminPages = {
   },
   page1T2: {
     path: '/a/page_1/page_1_2',
-    component: () => import('../../views/admin/page1/Page1T2.vue'),
+    component: () => import('../views/admin/page1/Page1T2.vue'),
     meta: {
       key: '1_2',
       title: 'Page1_2',
@@ -32,7 +32,7 @@ const AdminPages = {
   },
   page2: {
     path: '/a/page_2',
-    component: () => import('../../views/admin/page2/Page2.vue'),
+    component: () => import('../views/admin/page2/Page2.vue'),
     meta: {
       key: '2',
       title: 'Page2',
@@ -46,7 +46,7 @@ const AdminPages = {
 const AdminRoutes = [
   {
     path: '/a',
-    component: () => import('../../components/YcContainer'),
+    component: () => import('../components/admin/YcaContainer'),
     children: [{
       path: AdminPages.page1.path,
       component: () => AdminPages.page1.component()
@@ -67,10 +67,10 @@ const AdminRoutes = [
 const FrontRoutes = [
   {
     path: '/f',
-    component: () => import('../../components/front/YfContainer'),
+    component: () => import('../components/front/YcfContainer'),
     children: [{
       path: 'home',
-      component: () => import('../../views/front/home/Home')
+      component: () => import('../views/front/home/Home')
     }]
   }
 ]

@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import SysConfig from '../assets/js/SysConfig'
+import SysConfig from '../../plugins/SysConfig'
 
 export default {
-  name: 'YcAsideMenu',
+  name: 'YcaAsideMenu',
   props: {
     collapse: Boolean
   },

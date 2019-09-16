@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'YfFooter'
+  name: 'YcfFooter'
 }
 </script>
 

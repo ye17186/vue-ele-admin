@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import SysConfig from './assets/js/SysConfig'
+import SysConfig from './plugins/SysConfig'
 
 Vue.use(Router)
 

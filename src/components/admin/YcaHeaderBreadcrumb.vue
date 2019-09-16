@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'YcHeaderBreadcrumb'
+  name: 'YcaHeaderBreadcrumb'
 }
 </script>
 

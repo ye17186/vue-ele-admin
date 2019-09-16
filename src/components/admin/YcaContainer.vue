@@ -3,16 +3,16 @@
     <el-aside class="yc-aside" :width="isCollapse ? '65px' : '200px'">
       <el-row class="yc-admin-logo" style="">ddd</el-row>
       <el-scrollbar style="height: calc(100% - 50px); width: 100%;">
-        <yc-aside-menu :collapse="isCollapse"></yc-aside-menu>
+        <yca-aside-menu :collapse="isCollapse"></yca-aside-menu>
       </el-scrollbar>
     </el-aside>
     <el-container style="height: 100%;">
       <el-header height="75px" style="padding: 0;">
         <el-row style="height: 50px; border-bottom: 2px solid #cccccc;">
-          <yc-header-menu></yc-header-menu>
+          <yca-header-menu></yca-header-menu>
         </el-row>
         <el-row style="height: 25px;">
-          <yc-header-tabs></yc-header-tabs>
+          <yca-header-tabs></yca-header-tabs>
         </el-row>
       </el-header>
       <el-main class="yc-main-view">
@@ -26,13 +26,13 @@
 </template>
 
 <script>
-import YcAsideMenu from './YcAsideMenu'
-import YcHeaderTabs from './YcHeaderTabs'
-import YcHeaderMenu from './YcHeaderMenu'
+import YcaAsideMenu from './YcaAsideMenu'
+import YcaHeaderTabs from './YcaHeaderTabs'
+import YcaHeaderMenu from './YcaHeaderMenu'
 
 export default {
-  name: 'YcContainer',
-  components: { YcHeaderMenu, YcHeaderTabs, YcAsideMenu },
+  name: 'YcaContainer',
+  components: { YcaHeaderMenu, YcaHeaderTabs, YcaAsideMenu },
   computed: {
     isCollapse: function () {
       return this.$store.state.menuCollapse

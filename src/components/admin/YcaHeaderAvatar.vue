@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'YcHeaderAvatar'
+  name: 'YcaHeaderAvatar'
 }
 </script>
 

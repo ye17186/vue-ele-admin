@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'YcHeaderDropdown'
+  name: 'YcaHeaderDropdown'
 }
 </script>
 

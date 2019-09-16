@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import StoreUtils from '../plugins/StoreUtils'
+import StoreUtils from '../../plugins/StoreUtils'
 
 export default {
-  name: 'YcHeaderCollapse',
+  name: 'YcaHeaderCollapse',
   computed: {
     isMenuCollapse: function () {
       return this.$store.state.menuCollapse

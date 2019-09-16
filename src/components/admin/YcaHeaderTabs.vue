@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: 'YcHeaderTabs'
+  name: 'YcaHeaderTabs'
 }
 </script>
 
